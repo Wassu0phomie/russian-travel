@@ -1,0 +1,178 @@
+.places {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 92px 148px 0 148px; /* Отступ сверху и снизу */
+    color: #FFFFFF;
+}
+
+.places__container {
+    max-width: 984px;
+    box-sizing: border-box; /* Включает паддинги и границы в расчет ширины */
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.places__blocks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.places__block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 48px; 
+    gap: 40px;
+
+}
+
+
+
+.place__block__image {
+    max-width: 460px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.place__block__title {
+    max-width: 460px;
+    height: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+}
+
+
+.place__block__website {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    max-width: 456px;
+    gap: 12px;
+}
+
+.website__link {
+    color: #FFFFFF;
+}
+
+
+.website__link:hover {
+    opacity: 80%;
+    color: #FFFFFF;
+}
+
+
+.place__block__paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 26px 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+}
+
+.place__block__paragraph {
+    max-width: 484px;
+}
+
+.places__block:last-child {
+    padding-bottom: 0;
+} 
+
+
+
+@media screen and (max-width: 1024px) {
+    .places {
+        padding: 92px 48px 0 48px; /* Отступ сверху и снизу */
+    }
+    
+    .places__container {
+        max-width: 928px;
+    }
+    .places__blocks {
+    }
+    .places__block {
+        gap: 32px;
+    }
+
+    .place__block__image {
+        max-width: 440px;
+        width: 100%;
+    }
+    .place__block__paragraphs {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163%;
+        gap: 26px 32px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    .places {
+        padding: 88px 24px 0 24px; /* Отступ сверху и снизу */
+    }
+    .places__container {
+        max-width: 720px;
+        gap: 73;
+    }
+    .place__block__image {
+        max-width: 340px;
+        width: 100%;
+    }
+    .places__block {
+        gap: 28px;
+    }
+    .place__block__paragraphs {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 163%;
+        gap: 25px 28px;
+
+    }
+
+
+}
+@media screen and (max-width: 320px) {
+    .places__blocks {
+        display: flex;
+        flex-direction: column; /* Убедитесь, что блоки располагаются в колонку */
+    }
+
+    .places__block {
+        align-items: start;
+        flex-direction: column; /* Каждый блок будет располагаться по вертикали */
+        gap: 20px; /* Уменьшаем отступ между элементами, если нужно */
+    }
+
+    .place__block__image {
+        max-width: 100%; /* Убедитесь, что изображение занимает всю ширину блока */
+        width: 100%;
+    }
+
+    .place__block__title {
+        max-width: 288px;
+        font-size: 24px; /* Уменьшаем размер шрифта для лучшей читаемости на маленьких экранах */
+        line-height: 28px; /* Уменьшаем высоту строки */
+    }
+
+    .place__block__paragraphs {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 163%;
+    }
+
+    .place__block__website {
+        align-self: flex-start; /* Центруем блок с веб-сайтом */
+    }
+}
+

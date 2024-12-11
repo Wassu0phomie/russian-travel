@@ -1,0 +1,83 @@
+.inro {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 92px 442px 0 148px; /* Отступ сверху и снизу */
+    color: #FFFFFF;
+    
+}
+
+/* Контейнер для содержимого хедера */
+.into__container {
+    margin: 0 auto; /* Центрирование контейнера */
+    max-width: 690px;
+    width: 100%;
+    min-height: 429px;
+    height: auto;
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Располагаем элементы в колонку */
+    justify-content: start; /* Центрируем элементы по вертикали (если необходимо) */
+    border: 1px solid black; /* Граница (можно убрать, если не нужна) */
+    box-sizing: border-box; /* Включает паддинги и границы в расчет ширины */
+}
+
+.intro__title {
+    width: 100%; /* Можно оставить или изменить в зависимости от дизайна */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+}
+
+.intro__text {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 33px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.intro__list {
+    width: 690px;
+}
+
+.intro__list-items {
+    padding: 0;
+    margin:0;
+}
+
+
+.intro__list_item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .inro {
+        padding: 92px 286px 0 48px; /* Отступ сверху и снизу */
+        
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header__container {
+        max-width: 720px; /* Максимальная ширина контейнера */
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .inro {
+        padding: 64px 16px 0 16px; /* Отступ сверху и снизу */
+        
+    }
+}

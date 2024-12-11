@@ -1,0 +1,87 @@
+.header {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 28px 48px 0 48px; /* Отступ сверху и снизу */
+}
+
+/* Контейнер для содержимого хедера */
+.header__container {
+    max-width: 1184px; /* Максимальная ширина контейнера */
+    margin: 0 auto;    /* Центрирование контейнера */
+    height: 52px; /* Высота контейнера */
+    display: flex; /* Используем Flexbox */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    box-sizing: border-box; /* Включает паддинги и границы в расчет ширины */
+}
+
+.header__logo {
+    height:52px;
+    width: 176px;
+}
+
+.menu__list {
+    display: flex; 
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__link {
+    display: inline-block; /* Позволяет задать ширину и высоту */
+    width: 29px; /* Ширина ссылки */
+    height: 28px; /* Высота ссылки */
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.menu__link__none-active {
+    text-decoration: none;
+}
+
+.menu__item{
+    list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header__container {
+        max-width: 928px; /* Максимальная ширина контейнера */
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header__container {
+        max-width: 720px; /* Максимальная ширина контейнера */
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        margin: 0; /* Убираем внешние отступы */
+        padding: 16px 16px 0 16px; /* Отступ сверху и снизу */
+    }
+    .header__container {
+        width: 288px; /* Максимальная ширина контейнера */
+        height: 42px; /* Высота контейнера */
+    }
+    .header__logo {
+        height:42px;
+        width: 142px;
+    }
+    .menu__link {
+        display: inline-block; /* Позволяет задать ширину и высоту */
+        width: 22px;
+        height: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: right;
+    }
+}
+
+

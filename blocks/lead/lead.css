@@ -1,0 +1,144 @@
+.lead {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 56px 148px 0 148px; /* Отступ сверху и снизу */
+    color: #FFFFFF;
+}
+
+/* Контейнер для содержимого хедера */
+.lead__container {
+    margin: 0 auto; /* Центрирование контейнера */
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Располагаем элементы в колонку */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    justify-content: center; /* Центрируем элементы по вертикали (если необходимо) */
+    box-sizing: border-box; /* Включает паддинги и границы в расчет ширины */   
+    max-width: 984px;
+    position: relative;
+
+}
+
+.lead__title {
+    display: flex;
+    max-width: 720px; /* Можно оставить или изменить в зависимости от дизайна */
+    text-align: center; /* Центрируем текст внутри заголовка */
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+}
+
+.lead__subtitle {
+    padding-top: 32px;
+    max-width: 640px; /* Можно оставить или изменить в зависимости от дизайна */
+    height: 72px; /* Можно изменить в зависимости от дизайна */
+    text-align: center; /* Центрируем текст внутри подзаголовка */
+    line-height: 30px;
+    font-size: 36px;
+}
+
+.lead__container__images {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 984px;
+    width: 100%;
+    padding-top: 64px;
+    max-height: 615px;
+}
+
+.travel__img {
+    width: 100%; /* Ширина изображения, если нужно */
+    max-height: 615;
+    height: 100%; /* Автоматическая высота для сохранения пропорций */
+    display: block; /* Убедитесь, что изображение отображается как блочный элемент */
+}
+
+.map__img {
+    position: absolute;
+    width: calc(100% - 47px); /* Ширина для карты */
+    height: 252px; /* Высота для карты */
+    z-index: 1; /* Убедитесь, что изображение карты выше */
+    top: 400px;
+}
+
+.lead__caption {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    margin:0;
+    padding: 8px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .lead {
+        margin: 0; /* Убираем внешние отступы */
+        padding: 48px 48px 0 48px; /* Отступ сверху и снизу */
+    }
+
+    .lead__container {
+        max-width: 928px; /* Максимальная ширина контейнера */
+        height: 962px;
+    }
+    .lead__contrainer__images {
+        padding-top: 56px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead {
+        margin: 0; /* Убираем внешние отступы */
+        padding: 48px 0 0 0; /* Отступ сверху и снизу */
+    }
+
+    .lead__container {
+        max-width: 768px; /* Максимальная ширина контейнера */
+        max-height: 862px;
+    }
+    .lead__contrainer__images {
+        padding-top: 56px;
+    }   
+    .lead__caption {
+        padding: 8px 0 0 24px; 
+    }
+    .lead__title {
+        max-width: 720px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .lead {
+        margin: 0; /* Убираем внешние отступы */
+        padding: 48px 0 0 0; /* Отступ сверху и снизу */
+    }
+
+    .lead__container {
+        max-width: 320px; /* Максимальная ширина контейнера */
+        max-height: 406px;
+    }
+    .lead__contrainer__images {
+        padding-top: 40px;
+    }   
+    .lead__caption {
+        padding: 8px 0 0 16px; 
+    }
+    .lead__title {
+        width: 288px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    
+    .lead__subtitle {
+        padding-top: 16px;
+        width: 288px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+

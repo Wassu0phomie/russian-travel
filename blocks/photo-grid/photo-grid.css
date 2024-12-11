@@ -1,0 +1,57 @@
+.photo-grid {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 92px 48px 0 48px; /* Отступ сверху и снизу */
+    height: auto;
+}
+
+
+.grid__container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    grid-template-rows: repeat(3, 213px);
+    gap: 16px;
+    max-width: 1184px;
+}
+
+.grid__block {
+  width: 100%; /* Занимает всю доступную ширину родительского контейнера */
+  max-width: 284px; /* Максимальная ширина блока */
+
+}
+
+.grid__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid__container {
+      grid-template-columns: repeat(auto-fit, 300px);
+      grid-template-rows: repeat(4, 225px);
+
+    }
+    .grid__block {
+      width: 100%; /* Занимает всю доступную ширину родительского контейнера */
+      max-width: 300px; /* Максимальная ширина блока */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photo-grid {
+      padding: 88px 24px 0 24px; /* Отступ сверху и снизу */
+    }
+    .grid__container {
+      grid-template-columns: repeat(auto-fit, 352px);
+      grid-template-rows: repeat(6,264px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .grid__container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+}

@@ -1,0 +1,60 @@
+.footer {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 92px 48px 24px 48px; /* Отступ сверху и снизу */
+    color: #FFFFFF;
+}
+
+/* Контейнер для содержимого хедера */
+.footer__container {
+    max-width: 1184px; /* Максимальная ширина контейнера */
+
+    margin: 0 auto;    /* Центрирование контейнера */
+    display: flex; /* Используем Flexbox */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    box-sizing: border-box; /* Включает паддинги и границы в расчет ширины */
+}
+
+.footer__links {
+    display: flex;
+    gap: 18px;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item{
+    list-style: none;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+}
+
+.footer__link:hover {
+    opacity: 80%;
+}
+
+
+@media screen and (max-width: 320px) {
+    .footer__container {
+        display: flex; /* Используем Flexbox */
+        flex-direction: column;
+        align-self: flex-start; /* Центруем блок с веб-сайтом */
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .footer__author {
+
+        padding-top: 48px;
+    }
+}
